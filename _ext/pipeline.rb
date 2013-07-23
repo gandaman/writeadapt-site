@@ -1,3 +1,4 @@
+require './stylesheets/_themes/lib/functions.rb'
 require 'zurb-foundation'
 
 Awestruct::Extensions::Pipeline.new do
