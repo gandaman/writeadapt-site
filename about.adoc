@@ -1,0 +1,12 @@
+= About {sitename} 1
+Gan the man
+:awestruct-layout: base 2
+
+{sitename} was started by {author} during a conference workshop.
+It's quickly becoming much bigger than this humble beginning.
+
+*The above is some boiler plate text created by the conference presenters...*
+
+This page is written in http://asciidoc.org[AsciiDoc].
+It's transformed by http://awestruct.org[Awestruct] and http://asciidoctor.org[Asciidoctor] into a webpage for this static website.
+

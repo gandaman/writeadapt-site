@@ -1,0 +1,40 @@
+name: Write__Adapt__
+title: WriteAdapt - For People Who Love Content
+org: Strategy Media
+author: The Octocat
+author_url: https://github.com/octocat
+base_url: ''
+ctx_path: ''
+
+# Do not interpolate ruby vars #{var}
+interpolate: false 1
+#haml:
+#  :ugly: true    # means do not pretty-print/indent the generated HTML
+
+asciidoctor:
+  :safe: safe
+  :attributes:
+    sitename: WriteAdapt
+    base_url: ''
+    ctx_path: ''
+    idprefix: ''
+    idseparator: '-'
+    sectanchors: ''
+    icons: font
+
+profiles:
+  development:
+    deploy:
+      dummy:
+  production:
+    base_url: http://{username}.github.io/writeadapt-{username}
+    ctx_path: /writeadapt-{username}
+    asciidoctor:
+      :attributes:
+        base_url: http://{username}.github.io/writeadapt-{username}
+        ctx_path: /writeadapt-{username}
+        # imagesdir must be absolute to work around Atom feed bug
+        imagesdir: http://{username}.github.io/writeadapt-{username}/images
+    deploy:
+      host: github_pages
+      branch: gh-pages
