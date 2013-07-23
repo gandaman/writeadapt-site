@@ -1,4 +1,23 @@
-name: Project Name
-title: Baked with Awestruct
-org: Organization
+name: Write__Adapt__
+title: WriteAdapt - For People Who Love Content
+org: Strategy Media
+author: The Octocat
+author_url: https://github.com/octocat
 base_url: ''
+ctx_path: ''
+
+# Do not interpolate ruby vars #{var}
+interpolate: false 1
+#haml:
+#  :ugly: true    # means do not pretty-print/indent the generated HTML
+
+asciidoctor:
+  :safe: safe
+  :attributes:
+    sitename: WriteAdapt
+    base_url: ''
+    ctx_path: ''
+    idprefix: ''
+    idseparator: '-'
+    sectanchors: ''
+    icons: font
